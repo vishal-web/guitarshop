@@ -94,3 +94,17 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+
+if (isset($_SERVER['SERVER_NAME']) && strpos($_SERVER['SERVER_NAME'], 'guitarshopstore') !== false) {
+
+	// Host: sql12.freesqldatabase.com
+	// Database name: sql12340643
+	// Database user: sql12340643
+	// Database password: LZmeaGfYqY
+	// Port number: 3306
+
+	$db['default']['hostname'] = 'sql12.freesqldatabase.com';
+	$db['default']['username'] = 'sql12340643';
+	$db['default']['password'] = 'LZmeaGfYqY';
+	$db['default']['database'] = 'sql12340643';
+}
